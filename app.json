@@ -1,17 +1,20 @@
 {
   "expo": {
-    "name": "nidhi-portfolio",
-    "slug": "nidhi-portfolio",
+    "name": "Nidhi | React Native Developer",
+    "slug": "portfolio",
+    "scheme": "portfolio",
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "default",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "automatic",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "dev.nidhi.portfolio"
     },
     "android": {
+      "package": "dev.nidhi.portfolio",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#EEF2FF",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
@@ -19,7 +22,18 @@
       "predictiveBackGestureEnabled": false
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/favicon.png",
+      "name": "Nidhi | React Native Developer",
+      "shortName": "Nidhi",
+      "lang": "en",
+      "themeColor": "#4F46E5",
+      "backgroundColor": "#FAFAF9"
+    },
+    "plugins": ["expo-router", "expo-font"],
+    "experiments": {
+      "typedRoutes": true
     }
   }
 }
